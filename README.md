@@ -43,3 +43,38 @@ Our model's predictions were analyzed using SHAP (SHapley Additive exPlanations)
 - Basic amenities and features like **Kitchen type** and **Bedroom surface areas** show relatively lower but consistent impact
 
 The color gradient in the plot indicates feature values (blue = low, red = high), while the horizontal position shows the magnitude of impact on the model's rental price predictions.
+
+
+## Model Interpretation and Causal Analysis
+
+### 1. Statistical Significance of Features (p-values)
+![Statistical Significance Analysis](./pstat.png)
+
+The table above shows the statistical significance (p-value) of each feature's causal effect. Key observations:
+- Features like 'Furnished_1' and 'Office_1' show very high statistical significance (p-value < 1e-09)
+- Location features (zip codes) demonstrate varying levels of significance
+- Some amenities like 'Common water heater_1' show lower statistical significance
+
+### 2. Direct Causal Effects
+![Direct Causal Effects of Features](./graph.png)
+
+The causal analysis shows the Average Treatment Effect (ATE) with 95% confidence intervals for each feature:
+- Some features show strong positive causal effects but with wide confidence intervals
+- Location-based features (zip codes) demonstrate varying causal impacts
+- The width of confidence intervals indicates the uncertainty in our causal estimates
+
+### Key Insights:
+1. **Predictive vs Causal Relationships**
+  - Features highly ranked in SHAP analysis may not have strong causal relationships
+  - This distinction helps identify which features truly influence prices versus those that are merely correlated
+
+2. **Location Effects**
+  - Different zip codes show varying levels of both predictive and causal importance
+  - This suggests that location plays a complex role in rental price determination
+
+3. **Policy Implications**
+  - Features with both strong predictive power and significant causal effects should be prioritized
+  - Wide confidence intervals suggest areas where more data might be needed
+  - These insights can guide evidence-based policy interventions in the Brussels real estate market
+
+*Note: All analyses include 95% confidence intervals and p-values for statistical validation.*
