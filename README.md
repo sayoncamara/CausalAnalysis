@@ -32,7 +32,7 @@ The project begins with  exploratory data analysis (EDA), as the dataset used is
 
 However, while SHAP values reveal feature importance in a predictive sense, they do not provide insights into the causal effects of these features. To bridge this gap, we leverage CausalAnalysis from EconML to determine which features not only correlate with higher rents but also causally impact rental prices. By understanding the actual causal relationships, we can provide more reliable insights into how specific property features influence rental income.
 
-In the next phase, we explore how property features—such as heating systems, solar panels, furnishing, and building conditions—affect rental prices through causal inference models. Using tools like policy trees and heterogeneity analysis, we dive deep into how these features impact different types of properties.
+In the next phase, I explore how property features—such as heating systems, solar panels, furnishing, and building conditions—affect rental prices through causal inference models. Using tools like policy trees and heterogeneity analysis, we dive deep into how these features impact different types of properties.
 
 Ultimately, this project aims to offer actionable insights for real estate decision-makers, highlighting which property features have the greatest potential to increase rental prices and guiding cost-effective property improvements.
 
@@ -152,7 +152,7 @@ The causal analysis shows the Average Treatment Effect (ATE) with 95% confidence
 ### Conditional Average Treatment Effects (CATE)
 ![Decision Tree Analysis](./tree.png)
 
-We used the presence of a thermic solar panel as an example to analyze how different types of apartments may experience varying increases in monthly rental prices when adding this amenity. The decision tree analysis reveals significant heterogeneity in treatment effects:
+I used the presence of a thermic solar panel as an example to analyze how different types of apartments may experience varying increases in monthly rental prices when adding this amenity. The decision tree analysis reveals significant heterogeneity in treatment effects:
 
 ### Key Findings:
 
