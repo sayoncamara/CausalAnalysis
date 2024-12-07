@@ -78,3 +78,32 @@ The causal analysis shows the Average Treatment Effect (ATE) with 95% confidence
   - These insights can guide evidence-based policy interventions in the Brussels real estate market
 
 *Note: All analyses include 95% confidence intervals and p-values for statistical validation.*
+
+## Heterogeneous Treatment Effects Analysis
+
+### Conditional Average Treatment Effects (CATE)
+![Decision Tree Analysis](./tree.png)
+
+We used the presence of a thermic solar panel as an example to analyze how different types of apartments may experience varying increases in monthly rental prices when adding this amenity. The decision tree analysis reveals significant heterogeneity in treatment effects:
+
+### Key Findings:
+
+1. **Age-Based Effects**
+  - Properties built before 1955: Show moderate positive effects (CATE mean = 15.922)
+  - Properties built between 1955-1992: Demonstrate stronger positive effects (CATE mean = 30.873)
+  - Properties built after 1992: Display the strongest positive effects (CATE mean = 41.922)
+
+2. **Building Condition Impact**
+  - For older properties (pre-1955):
+    - Poor condition (≤ 0.5): Show negative effects (CATE mean = -16.426)
+    - Better condition: Demonstrate more positive effects
+  - Standard deviation varies significantly across segments, indicating varying levels of uncertainty
+
+3. **Strongest Treatment Effects**
+  - Newer properties (post-1992) show the highest positive impact (CATE = 41.922)
+  - Properties in better condition consistently show more favorable treatment effects
+  - Lower standard deviations in newer properties suggest more reliable estimates
+
+This analysis suggests that the causal impact of solar panels varies significantly based on the property's age and condition, with newer properties generally showing stronger positive effects on rental prices. This insight is valuable for targeted property improvements and policy recommendations.
+
+*Note: CATE (Conditional Average Treatment Effect) is a crucial concept in causal inference, allowing for more personalized interventions by accounting for heterogeneity across different subpopulations.*
