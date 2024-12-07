@@ -21,19 +21,7 @@
 - ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 - ![EconML](https://img.shields.io/badge/EconML-Causal%20ML%20Library-blue?style=for-the-badge)
 
-## Prerequisites
 
-### Python Version
-- Python 3.7+
-
-### Required Packages
-```python
-numpy
-pandas
-scikit-learn
-econml
-shap
-matplotlib
 
 Introduction
 
