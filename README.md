@@ -50,6 +50,41 @@ Ultimately, this project aims to offer actionable insights for real estate decis
 | Double glazing | Whether windows have double-pane insulation for energy efficiency |
 | Furnished | Whether the property is rented with furniture included |
 
+## Predictive Modeling
+
+The predictive modeling phase implements a comprehensive machine learning pipeline to predict monthly rental prices in Brussels. Here's our approach:
+
+### Model Architecture
+- Utilized LightGBM, an efficient gradient boosting framework
+- Target Variable: Monthly rental price
+- Features: Property characteristics including physical attributes, amenities, and location indicators
+
+### Pipeline Implementation
+1. **Data Preparation**
+  - Split dataset into features (X) and target variable (y)
+  - Created separate training and test sets to ensure unbiased evaluation
+
+2. **Hyperparameter Optimization**
+  - Employed GridSearchCV with 5-fold cross-validation
+  - Optimized key parameters:
+    - Learning rate
+    - Maximum tree depth
+  - Automated selection of best parameter combination
+
+3. **Model Training**
+  - Trained LightGBM model with optimized parameters
+  - Implemented 100 boosting rounds on training data
+  - Monitored model convergence and performance
+
+4. **Feature Impact Analysis**
+  - Utilized SHAP (SHapley Additive exPlanations) TreeExplainer
+  - Generated SHAP values for test dataset predictions
+  - Created visualization of feature impacts where:
+    - Points represent individual samples
+    - Colors indicate feature values (blue=low, red=high)
+    - X-axis position shows impact magnitude on predictions
+
+This predictive modeling approach provides not only accurate price predictions but also insights into how different features influence these predictions, setting the foundation for our subsequent causal analysis.
 
 ## Model Interpretation: Feature Importance Analysis
 
