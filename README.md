@@ -4,13 +4,13 @@
 ## Table of Contents
 
 1. Introduction
-2. Data Collection and Description
+2. Dataset Features
 3. Exploratory Data Analysis
 4. Model Interpretation and Causal Analysis
-  - SHAP Analysis
-  - Statistical Significance
-  - Direct Causal Effects
-  - Heterogeneous Treatment Effects
+   - SHAP Analysis
+   - Statistical Significance
+   - Direct Causal Effects
+   - Heterogeneous Treatment Effects
 5. Conclusions and Policy Implications
 
 ## Built With
@@ -23,15 +23,17 @@
 
 ## Prerequisites
 
+### Python Version
 - Python 3.7+
-- Required packages:
- ```bash
- numpy
- pandas
- scikit-learn
- econml
- shap
- matplotlib
+
+### Required Packages
+```python
+numpy
+pandas
+scikit-learn
+econml
+shap
+matplotlib
 
 Introduction
 
