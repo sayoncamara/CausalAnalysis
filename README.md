@@ -26,3 +26,20 @@ Ultimately, this project aims to offer actionable insights for real estate decis
 | Heating type | Primary heating system used (e.g., central, electric, gas) |
 | Double glazing | Whether windows have double-pane insulation for energy efficiency |
 | Furnished | Whether the property is rented with furniture included |
+
+
+## Model Interpretation: Feature Importance Analysis
+
+![SHAP Values Impact on Rental Price Prediction](./Shapley.png)
+
+Our model's predictions were analyzed using SHAP (SHapley Additive exPlanations) values to understand the impact of each feature on rental price predictions. The analysis reveals:
+
+### Key Insights:
+- **Total Space** has the strongest impact on rental prices, showing significant influence on model predictions
+- **Toilets**, **Terrace surface**, and **Furnished** status are the next most influential features
+- **Building Characteristics** (Bathrooms, Bedrooms, Kitchen surface) show moderate impact
+- **Construction year** and **Floor** level demonstrate notable influence
+- Specific location indicators (e.g., **zip_code_1081**) have measurable effects on price predictions
+- Basic amenities and features like **Kitchen type** and **Bedroom surface areas** show relatively lower but consistent impact
+
+The color gradient in the plot indicates feature values (blue = low, red = high), while the horizontal position shows the magnitude of impact on the model's rental price predictions.
