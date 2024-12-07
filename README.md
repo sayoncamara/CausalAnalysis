@@ -11,3 +11,18 @@ However, while SHAP values reveal feature importance in a predictive sense, they
 In the next phase, we explore how property features—such as heating systems, solar panels, furnishing, and building conditions—affect rental prices through causal inference models. Using tools like policy trees and heterogeneity analysis, we dive deep into how these features impact different types of properties.
 
 Ultimately, this project aims to offer actionable insights for real estate decision-makers, highlighting which property features have the greatest potential to increase rental prices and guiding cost-effective property improvements.
+
+## Dataset Features
+
+| Feature Name | Description |
+|-------------|-------------|
+| Monthly rental price | Monthly cost charged for renting the property in Brussels |
+| Living area | Total habitable area of the property in square meters |
+| Bedrooms | Number of rooms designated as bedrooms in the property |
+| Energy class | Energy performance rating of the property (e.g., A, B, C, D, E, F, G) |
+| Building condition | Overall state of the property (e.g., excellent, good, to renovate) |
+| Location | Area/neighborhood within Brussels where property is located |
+| Construction year | Year when the building was originally constructed |
+| Heating type | Primary heating system used (e.g., central, electric, gas) |
+| Double glazing | Whether windows have double-pane insulation for energy efficiency |
+| Furnished | Whether the property is rented with furniture included |
