@@ -102,7 +102,16 @@ Our model's predictions were analyzed using SHAP (SHapley Additive exPlanations)
 
 The color gradient in the plot indicates feature values (blue = low, red = high), while the horizontal position shows the magnitude of impact on the model's rental price predictions.
 
+## Causal Modeling
 
+We used the `CausalAnalysis` class from `econml.solutions.causal_analysis` to conduct our causal inference analysis. This comprehensive framework enables the estimation of treatment effects and causal relationships in observational data. The class implements various causal inference methods, allowing us to:
+- Estimate both direct and heterogeneous treatment effects
+- Calculate statistical significance of causal relationships
+- Account for confounding variables
+- Handle complex feature interactions
+- Provide confidence intervals for estimated effects
+
+In essence the code is ranking features by their causal importance to the outcome, based on the p-value of the causal effect. Features with smaller p-values are more likely to have a significant impact on the target variable, providing valuable insights into which factors are the most influential in your causal analysis. We can already spot a difference in feature importance in the causal model in comparison to the predictive model. Zip codes tend to have bigger causal impact on prices than would be assumed from the predictive model for example.
 ## Model Interpretation and Causal Analysis
 
 ### 1. Statistical Significance of Features (p-values)
