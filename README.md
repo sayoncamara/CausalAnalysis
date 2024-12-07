@@ -3,15 +3,18 @@
 
 ## Table of Contents
 
-1. Introduction
-2. Dataset Features
-3. Exploratory Data Analysis
-4. Model Interpretation and Causal Analysis
-   - SHAP Analysis
-   - Statistical Significance
-   - Direct Causal Effects
-   - Heterogeneous Treatment Effects
-5. Conclusions and Policy Implications
+1. [Introduction](#introduction)
+2. [Dataset Features](#dataset-features)
+3. [Predictive Modeling](#predictive-modeling)
+  - [Model Architecture](#model-architecture)
+  - [Pipeline Implementation](#pipeline-implementation)
+4. [Model Interpretation: Feature Importance Analysis](#model-interpretation-feature-importance-analysis)
+5. [Causal Modeling](#causal-modeling)
+6. [Model Interpretation and Causal Analysis](#model-interpretation-and-causal-analysis)
+  - [Statistical Significance of Features](#1-statistical-significance-of-features-p-values)
+  - [Direct Causal Effects](#2-direct-causal-effects)
+7. [Heterogeneous Treatment Effects Analysis](#heterogeneous-treatment-effects-analysis)
+  - [Conditional Average Treatment Effects](#conditional-average-treatment-effects-cate)
 
 ## Built With
 
@@ -20,8 +23,6 @@
 - ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 - ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 - ![EconML](https://img.shields.io/badge/EconML-Causal%20ML%20Library-blue?style=for-the-badge)
-
-
 
 Introduction
 
