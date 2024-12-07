@@ -1,5 +1,38 @@
 # Causal Analysis of Rental Price Determinants: Policy Insights for Real Estate Interventions in Brussels
 
+
+## Table of Contents
+
+1. Introduction
+2. Data Collection and Description
+3. Exploratory Data Analysis
+4. Model Interpretation and Causal Analysis
+  - SHAP Analysis
+  - Statistical Significance
+  - Direct Causal Effects
+  - Heterogeneous Treatment Effects
+5. Conclusions and Policy Implications
+
+## Built With
+
+- ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+- ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+- ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+- ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+- ![EconML](https://img.shields.io/badge/EconML-Causal%20ML%20Library-blue?style=for-the-badge)
+
+## Prerequisites
+
+- Python 3.7+
+- Required packages:
+ ```bash
+ numpy
+ pandas
+ scikit-learn
+ econml
+ shap
+ matplotlib
+
 Introduction
 
 In today's dynamic real estate market, understanding the factors that influence rental prices is critical for property owners, investors, and policymakers. Traditional models often provide predictions based on correlations, but they may not fully capture the causal relationships between different property features and rental prices. This project takes a step further by employing causal inference techniques to determine not only which features are most important in predicting rental prices but also how interventions like adding amenities or making structural improvements can impact rental returns.
